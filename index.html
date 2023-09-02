@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="navbar-end">
-                    <button class="btn btn-warning bg-red-500 text-white normal-case">Blog</button>
+                    <button onclick="modal_blog.showModal()" class="btn btn-warning bg-red-500 text-white normal-case">Blog</button>
                 </div>
               </div>
               <hr>
@@ -35,6 +35,47 @@
 
         </div>
         <!-- Thumbnail Card ends here -->
+        <!-- Modal -->
+             <!-- Open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="modal_blog.showModal()">open modal</button> -->
+            <dialog id="modal_blog" class="modal modal-bottom sm:modal-middle">
+                <form method="dialog" class="modal-box">
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Discuss the scope of var, let, and const
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>
+                            1. var has function scope and is hoisted, allowing access before declaration. <br>
+                            2. let and const have block scope, restricting their accessibility to the block where they are defined. <br>
+                            3. const enforces immutability after initialization, while let allows variable reassignment.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Tell us the use cases of null and undefined
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>null is typically used to intentionally indicate the absence of a value or an empty object reference, while undefined often represents uninitialized variables or missing object properties in JavaScript.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-arrow bg-base-200">
+                        <input type="radio" name="my-accordion-2" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            What do you mean by REST API?
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>A REST API is a set of rules and conventions for building and interacting with web services using HTTP methods to perform CRUD operations on resources represented as URLs.</p>
+                        </div>
+                      </div>
+                    <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                    </div>
+                </form>
+         </dialog>
     </main>
     <footer>
 
