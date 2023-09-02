@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Blog</title>
+</head>
+<body>
+    <header><h1 class="mb-24 text-6xl text-center">Welcome to Shakil's Blog</h1></header>
+    <main class="text-center items-center justify-center h-screen md:mt-40 container mx-auto">
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+               1. Discuss the scope of var, let, and const
+            </div>
+            <div class="collapse-content"> 
+              <p>
+                In JavaScript, var, let, and const are used to declare variables, but they have different scopes and behaviors. Understanding their scope is crucial for writing clean and bug-free code. Here's a discussion of the scope of each:<br>
+                =>"var" declarations are function-scoped, meaning they are limited in visibility to the function in which they are declared.
+                If declared outside of any function, var variables become global, accessible throughout the entire script, which can lead to unintended side effects and naming conflicts. <br>
+                =>"let" declarations are block-scoped, meaning they are confined to the block in which they are defined. A block is typically delimited by curly braces {}.
+                Variables declared with let are not hoisted to the top of the block but are hoisted to the top of their containing function or block.
+
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+               2. Tell us the use cases of null and undefined
+            </div>
+            <div class="collapse-content"> 
+              <p>
+                "null" is used to deliberately indicate the absence of any object value or no value. It is often employed to signify that a variable or object property should have no value or that a value has been intentionally removed or reset. <br>
+
+                "undefined" typically represents a variable or object property that has been declared but has not been assigned any value yet. It is also the default return value for functions that do not explicitly return anything and can indicate missing function arguments when parameters are not provided.
+                            </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+               3. What do you mean by REST API?
+            </div>
+            <div class="collapse-content"> 
+              <p>
+                 A REST API (Representational State Transfer Application Programming Interface) is an architectural style for designing networked applications, commonly used in web development. It adheres to several key principles:
+                1.Stateless: Each request from a client to a server must contain all the necessary information, ensuring independence from previous requests. <br>
+                2.Client-Server Architecture: Separates client (user interface) and server (data storage and processing) concerns, enabling independent development and scalability. <br>
+                3.Uniform Interface: Utilizes standard HTTP methods (GET, POST, PUT, DELETE) and URLs to interact with resources in a consistent and predictable manner. <br>
+                4.Resource-Based: Treats everything as a resource, identified by unique URIs, and manipulable via HTTP methods. <br>
+                5.Representation: Resources can have multiple representations (e.g., JSON, XML) for client interaction. <br>
+                6.Stateless Communication: Requests and responses are self-contained, with no server-side session state. <br>
+                7.Layered System: Supports multiple layers in the architecture, each serving a specific purpose. <br>
+                8.Cacheability: Responses can be cached by clients for performance improvement. <br>
+                REST APIs are widely used due to their simplicity, scalability, and applicability in various contexts, including web and mobile applications, IoT devices, and more.
+              </p>
+            </div>
+          </div>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>

@@ -51,13 +51,16 @@ const handleCard = async (id) =>{
                     <div>
                         <div class="avatar">
                             <div class="w-12 rounded-full">
-                                <img src="${card.authors[0]?.profile_picture}" />
+                                <img src="${card.authors[0]?.profile_picture}"/>
                             </div>
                         </div>
                     </div>
                     <div>
                         <h2 class="font-bold">${card.title}</h2>
-                        <p>${card.authors[0]?.profile_name} <span>${card.authors[0]?.verified}</span></p>
+                        <div class="flex gap-4">
+                            <p>${card.authors[0]?.profile_name}</p>
+                            <img src="image/verified.svg" alt="Thumbnail" />
+                        </div>
                         <p>${card.others?.views}</p>
                     </div>
                 </div>
@@ -70,6 +73,8 @@ const handleCard = async (id) =>{
     // console.log(catagoriesCard)
   
 }
-
+const handleBlog = () =>{
+    window.location.href='blog.html';
+}
 handleCard(id=1000);
 handleCatagoriesButton();
